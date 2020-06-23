@@ -16,6 +16,9 @@ h1 {
     font-family: cursive;
     font-size: 4em;
     color: gold;
+    /* padding-left: 2px; */
+    padding-right: 18px;
+    padding-left: 17px;
 }
 
 h2 {
@@ -27,10 +30,13 @@ h2 {
     color: rgb(231, 231, 231);
 }
 
+.row {
+    width: 100%; 
+}
 .menu {
-    width: 100%;
     padding: 40px;
     padding-top: 0px;
+    padding-left: 25px;
 }
 
 section {
@@ -42,7 +48,7 @@ section {
     width: 30%;
     height: 190px;
     float: left;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .dish-name {
@@ -54,7 +60,8 @@ section {
     width: 40%;
     height: 33px;
     padding: 5px 15px;
-    overflow-y: auto;
+    padding-right: 0px;
+    overflow-y: visible;
     text-align: left;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.7em;
@@ -66,4 +73,29 @@ section {
     font-family: cursive;
     font-size: 1.5em;
     color: white;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .menu {
+        padding: 15px;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    
+    section {
+        width: 46%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu {
+        padding: 25px;
+        padding-top: 0px;
+    }
+    
+    section {
+        width: 100%;
+        margin-left: 0px;
+    }
 }
